@@ -3,21 +3,6 @@ import argparse
 import requests
 import re
 
-# link = "https://quotes.toscrape.com/page/1/"
-# r = requests.get(link)
-# html_text = r.text 
-
-# soup = BeautifulSoup(html_text, 'html.parser')
-# quotes_div = soup.find_all("div", class_="quote")
-
-# for quote_html in quotes_div:
-#     quote_text_html = quote_html.find("span", class_="text")
-#     quote_text = quote_text_html.get_text(separator="", strip=False)
-#     quote_by_html = quote_html.find("small", class_="author")
-#     print(quote_text, "\n", quote_by_html)
-
-    
-
 LINK = "https://quotes.toscrape.com/page/"
 def scraper(from_page: str, to_page: str):
     for page in range(from_page, to_page+1):
